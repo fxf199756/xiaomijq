@@ -99,6 +99,9 @@ span{
 .title .container .right a:hover{
 	color: white;
 }
+.title .container .right .shop:hover p{
+	 color: #B0B0B0;
+}
 .title .container .right a i{
 	font-size: 20px;
 	line-height: 45px;
@@ -119,17 +122,17 @@ span{
 }
 .title .container .right .shop .none{
 	width:317px; 
-	height: 0px;
+	height: 100px;
 	text-align: center;
 	line-height: 100px;
 	position: absolute;
 	top: 40px;
 	right: 0;
-	z-index: 99;
+	z-index: 999;
 	background: white;
-	transition:all .5s;
 	overflow: hidden;
 	box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+	display: none;
 }
 /*导航栏结束*/
 /*主导航栏开始*/
@@ -240,7 +243,6 @@ input:focus{
 	width: 50px;
 	height: 50px;
 	background: white;
-	position: relative;
 	position: absolute;
 	right: 0;
 	top: 25px;
