@@ -99,9 +99,6 @@ span{
 .title .container .right a:hover{
 	color: white;
 }
-.title .container .right a:hover .none{
-	color: #B0B0B0;
-}
 .title .container .right a i{
 	font-size: 20px;
 	line-height: 45px;
@@ -122,15 +119,16 @@ span{
 }
 .title .container .right .shop .none{
 	width:317px; 
-	height: 100px;
+	height: 0px;
 	text-align: center;
 	line-height: 100px;
 	position: absolute;
 	top: 40px;
 	right: 0;
 	z-index: 99;
-	display: none;
 	background: white;
+	transition:all .5s;
+	overflow: hidden;
 	box-shadow: 0 14px 30px rgba(0,0,0,0.15);
 }
 /*导航栏结束*/
@@ -283,7 +281,7 @@ input:focus{
 	left: 0;
 	top: 0;
 	z-index: 5;
-	opacity: 0;
+	opacity: 1;
 	transition: all.6s;
 }
 .banner .imges:nth-child(2){
@@ -562,6 +560,54 @@ input:focus{
 	float: left;
 	border-top: 1px solid #E53935;
 }
+.buy .bottom .left{
+	width: 234px;
+	height: 339px;
+	margin-right: 12px;
+	background: #fafafa;
+	border-top: 1px solid #e53935;
+	float: left;
+}
+.buy .bottom .left .time{
+	font-size: 21px;
+	color: #ef3a3b;
+	padding-top: 15px;
+	text-align: center;
+	margin-top: 40px;
+}
+.buy .bottom .left img{
+	margin-top: 40px;
+	margin-left: 100px;
+}
+.buy .bottom .left .sub{
+	color: rgba(0,0,0,0.54);
+	font-size: 15px;
+	text-align: center;
+	margin-top: 20px;
+}
+.buy .bottom .left .coun{
+	width: 168px;
+	margin: 28px auto 0;
+}
+.buy .bottom .left .coun .box{
+	width: 46px;
+	height: 46px;
+	background: #605751;
+	color: #fff;
+	font-size: 24px;
+	line-height: 46px;
+	text-align: center;
+	float: left;
+}
+.buy .bottom .left .coun .dosh{
+	width: 15px;
+	height: 46px;
+	float: left;
+	color: #605751;
+	font-size: 28px;
+	line-height: 46px;
+}
+
 .buy .bottom .trans{
 	width: 979px;
 	height: 339px;
